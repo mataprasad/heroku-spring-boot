@@ -1,2 +1,2 @@
-web: java -Dserver.port=$PORT -jar ijooto-0.0.1-SNAPSHOT.jar
-worker: java -cp ijooto-0.0.1-SNAPSHOT.jar com.matapd.ijooto.MocApp
+web: java -Dserver.port=$PORT -D--appx.background-job-only=false -jar ijooto-0.0.1-SNAPSHOT.jar
+worker: java -Dserver.port=$PORT -D--appx.background-job-only=true  -jar ijooto-0.0.1-SNAPSHOT.jar
